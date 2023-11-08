@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About - WaterMonsterProject</title>
+    <meta property="og:title" content="About - WaterMonsterProject" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Karla;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/axolotllogo-1500h1.jpg"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./about.css" rel="stylesheet" />
+
+      <div class="about-container">
+        <header data-thq="thq-navbar" class="about-navbar-interactive">
+          <a href="index.html" class="about-navlink">
+            <img
+              alt="logo of the website - pop art of an axolotl"
+              src="public/axolotllogo-1500h.jpg"
+              class="about-image"
+            />
+          </a>
+          <div data-thq="thq-navbar-nav" class="about-desktop-menu">
+            <nav class="about-links">
+              <a href="index.html" class="about-link navLink">Home</a>
+              <a href="about.html" class="about-link01 navLink">About</a>
+              <a href="news.html" class="about-link02 navLink">News</a>
+              <a href="donate.html" class="about-link03 navLink">Donate</a>
+              <a href="#footer" class="about-link04 navLink">Contact</a>
+            </nav>
+            <div class="about-buttons">
+              <label class="about-text">
+                <span>Please Act Now!</span>
+                <br />
+              </label>
+              <div class="about-container01">
+                <a href="donate.html" class="about-navlink1 button">Donate</a>
+                <div class="about-container02">
+                  <div class="about-container03">
+                    <!-- Display the countdown timer in an element -->
+                    <p id="demo"></p>
+
+                    <script>
+                      // Set the date we're counting down to
+                      var countDownDate = new Date('Jan 5, 2024 15:37:25').getTime();
+
+                      // Update the count down every 1 second
+                      var x = setInterval(function() {
+
+                        // Get today's date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Display the result in the element with id='demo'
+                        document.getElementById('demo').innerHTML = days + 'd ' + hours + 'h '
+                        + minutes + 'm ' + seconds + 's ';
+
+                        // If the count down is finished, write some text
+                        if (distance < 0) {
+                          clearInterval(x);
+                          document.getElementById('demo').innerHTML = 'EXPIRED';
+                        }
+                      }, 1000);
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-thq="thq-burger-menu" class="about-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="about-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" class="about-mobile-menu">
+            <div class="about-top">
+              <img
+                alt="image"
+                src="public/axolotllogo-1500h.jpg"
+                class="about-logo"
+              />
+              <div class="about-container04">
+                <label class="about-text03">
+                  <span>Please Act Now!</span>
+                  <br />
+                </label>
+                <div class="about-container05">
+                  <div class="about-buttons1">
+                    <a href="donate.html" class="about-login button">
+                      <span>
+                        <span>Donate</span>
+                        <br />
+                      </span>
+                    </a>
+                    <div class="about-container06">
+                      <div class="about-container07">
+                        <!-- Display the countdown timer in an element -->
+                        <p id="demo"></p>
+
+                        <script>
+                          // Set the date we're counting down to
+                          var countDownDate = new Date('Jan 5, 2024 15:37:25').getTime();
+
+                          // Update the count down every 1 second
+                          var x = setInterval(function() {
+
+                            // Get today's date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now and the count down date
+                            var distance = countDownDate - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                            // Display the result in the element with id='demo'
+                            document.getElementById('demo').innerHTML = days + 'd ' + hours + 'h '
+                            + minutes + 'm ' + seconds + 's ';
+
+                            // If the count down is finished, write some text
+                            if (distance < 0) {
+                              clearInterval(x);
+                              document.getElementById('demo').innerHTML = 'EXPIRED';
+                            }
+                          }, 1000);
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-thq="thq-close-menu" class="about-close-menu">
+                <svg viewBox="0 0 1024 1024" class="about-icon02">
+                  <path
+                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <nav class="about-links1">
+              <a href="index.html" class="about-navlink2">Home</a>
+              <a href="donate.html" class="about-navlink3">Donate</a>
+              <a href="news.html" class="about-navlink4">News</a>
+            </nav>
+          </div>
+        </header>
+        <div class="about-content">
+          <div class="about-header">
+            <span class="about-heading">Donate Now!</span>
+            <span class="about-caption">
+              Every Donation Helps Save an Axolotl!
+            </span>
+          </div>
+          <div class="about-amount">
+            <div class="about-row">
+              <button class="about-button button">$10</button>
+              <button class="about-button1 button">$50</button>
+            </div>
+            <div class="about-row1">
+              <button class="about-button2 button">$100</button>
+              <a
+                href="https://www.paypal.com/us/home"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="about-link05 button"
+              >
+                Custom
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about-main">
+          <div class="about-content1">
+            <div class="about-hero-section">
+              <div class="about-header1">
+                <h1 class="about-heading1">
+                  About the Axolotl Species Preservation Center
+                </h1>
+                <p class="about-caption1">
+                  At the Axolotl Species Preservation Center, our passion is the
+                  preservation and conservation of one of the world's most
+                  extraordinary creatures—the axolotl. Our organization was
+                  founded with a clear mission: to protect and ensure the
+                  survival of this unique amphibian species, which is currently
+                  listed as critically endangered.
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            alt="picture of an axolotl"
+            src="public/axolotledit-200h.jpg"
+            loading="eager"
+            class="about-image1"
+          />
+        </div>
+        <section class="about-quote-one">
+          <h1 class="about-text09">Our Vision</h1>
+          <div class="about-quote-content">
+            <h2 class="about-quote">
+              "We envision a world where axolotls flourish in their natural
+              habitat, their ecosystems thrive, and their remarkable
+              regenerative abilities continue to inspire and contribute to
+              scientific advancements."
+            </h2>
+            <div class="about-quoted">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE1fHxwb3RyYWl0fGVufDB8fHx8MTY3MDkyNjgxNQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                class="about-image2"
+              />
+              <p class="about-caption2">Michael Belfort, APC Founder</p>
+            </div>
+          </div>
+        </section>
+        <section class="about-donation-use">
+          <div class="about-header2">
+            <h2 class="about-heading2">Who We Are</h2>
+            <p class="about-caption3">
+              We are a dedicated team of biologists, conservationists,
+              researchers, and passionate individuals who share a deep
+              commitment to the axolotl and its environment. Our expertise,
+              combined with our love for these creatures, drives our
+              conservation efforts.
+            </p>
+          </div>
+          <div class="about-accordion">
+            <div
+              data-role="accordion-container"
+              class="accordion-element about-element"
+            >
+              <div class="about-header3">
+                <h3 class="about-text10">What We Do</h3>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element about-element1"
+            >
+              <div class="about-header4">
+                <h3 class="about-text11">Habitat Preservation</h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name35"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="about-text12">
+                  We work tirelessly to protect and restore the natural habitats
+                  of axolotls, focusing on areas such as the Xochimilco canals,
+                  where these creatures are found.
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element about-element2"
+            >
+              <div class="about-header5">
+                <h3 class="about-text13">Scientific Research</h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name36"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="about-text14">
+                  Our organization supports research projects aimed at
+                  understanding axolotls and their unique regenerative
+                  capabilities. This knowledge is vital for developing effective
+                  conservation strategies.
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element about-element3"
+            >
+              <div class="about-header6">
+                <h3 class="about-text15">Conservation Initiatives</h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name37"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="about-text16">
+                  We collaborate with local communities, government bodies, and
+                  other organizations to implement conservation programs, raise
+                  awareness, and foster support for axolotl preservation.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="about-container09">
+                <script>
+                  /*
+                   Accordion - Code Embed
+                   */
+                   const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+                   const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+                   const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+                   const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+                   accordionContents.forEach((accordionContent) => {
+                       accordionContent.style.display = 'none'; //Hides all accordion contents
+                   });
+
+                   accordionIconsClosed.forEach((icon) => {
+                     icon.style.display = 'flex'
+                   })
+
+                   accordionIconsOpen.forEach((icon) => {
+                     icon.style.display = 'none'
+                   })
+
+                   accordionContainers.forEach((accordionContainer, index) => {
+                       accordionContainer.addEventListener('click', () => {
+                           if (accordionContents[index].style.display === 'flex') {
+                               // If the accordion is already open, close it
+                               accordionContents[index].style.display = 'none';
+                               accordionIconsClosed[index].style.display = 'flex';
+                               accordionIconsOpen[index].style.display = 'none'
+                           } else {
+                               // If the accordion is closed, open it
+                               accordionContents.forEach((accordionContent) => {
+                                   accordionContent.style.display = 'none'; //Hides all accordion contents
+                               });
+
+                               accordionIconsClosed.forEach((accordionIcon) => {
+                                   accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                               });
+
+                               accordionIconsOpen.forEach((accordionIcon) => {
+                                 accordionIcon.style.display = 'none';
+                               })
+
+                               accordionContents[index].style.display = 'flex'; // Shows accordion content
+                               accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                               accordionIconsOpen[index].style.display = 'flex';
+                           }
+                       });
+                   });
+                </script>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="about-stats">
+          <h1 class="about-text17">Get Involved</h1>
+          <div class="about-container10">
+            <div class="about-stat">
+              <span class="about-text18">Donate</span>
+              <span class="about-text19">
+                Your financial support directly contributes to our conservation
+                efforts.
+              </span>
+            </div>
+            <div class="about-stat1">
+              <span class="about-text20">Volunteer</span>
+              <span class="about-text21">
+                Contact us to become a part of our dedicated team, working on
+                the front lines of conservation.
+              </span>
+            </div>
+            <div class="about-stat2">
+              <span class="about-text22">Spread Awareness</span>
+              <span class="about-text23">
+                Share our mission with your network and help raise awareness
+                about axolotl conservation.
+              </span>
+            </div>
+          </div>
+        </div>
+        <section class="about-updates">
+          <div class="about-content5">
+            <div class="about-details">
+              <div class="about-header7">
+                <h2 class="about-heading3">
+                  Get updates and action alerts from APC by joining our
+                  newsletter
+                </h2>
+              </div>
+              <div class="about-action">
+                <div class="about-input">
+                  <input
+                    type="text"
+                    placeholder="Email address"
+                    class="about-textinput input"
+                  />
+                  <button class="button about-button3">Subscribe</button>
+                </div>
+                <div class="about-agreement">
+                  <div class="about-states">
+                    <div id="tos" class="about-checkbox"></div>
+                    <div id="tos-active" class="about-checkbox1">
+                      <svg viewBox="0 0 1024 1024" class="about-icon04">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="about-caption4">
+                    <label for="tos" class="about-normal">I agree to the</label>
+                    <label for="tos" class="about-bold">
+                      Terms and Conditions
+                    </label>
+                  </div>
+                  <div>
+                    <div class="about-container12">
+                      <script>
+                        // Create a boolean to represent the state of the toggle
+                        let tosToggle = false;
+
+                        // Add event listeners to the divs and labels
+                        document.getElementById('tos').addEventListener('click', toggleTos);
+                        document.getElementById('tos-active').addEventListener('click', toggleTos);
+                        document.querySelectorAll('label[for=tos]').forEach(label => label.addEventListener('click', toggleTos));
+
+                        // Define the toggleTos function to hide/show the elements based on the state of the toggle
+                        function toggleTos() {
+                          if (tosToggle) {
+                            document.getElementById('tos').style.display = 'flex';
+                            document.getElementById('tos-active').style.display = 'none';
+                          } else {
+                            document.getElementById('tos').style.display = 'none';
+                            document.getElementById('tos-active').style.display = 'flex';
+                          }
+                          tosToggle = !tosToggle;
+                        }
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-slider">
+              <div class="about-slides">
+                <div class="slide-active slide">
+                  <img
+                    alt="picture of a man holding an axolotl"
+                    src="public/manholdinganaxolotl-1400w.jpg"
+                    class="about-image3"
+                  />
+                  <span class="about-text24">See content like this!</span>
+                </div>
+                <div class="slide">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1670991761566-534b07539db5?ixid=Mnw5MTMyMXwwfDF8YWxsfDEzfHx8fHx8Mnx8MTY3MTAxNTg5Ng&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="about-image4"
+                  />
+                  <span class="about-text25">
+                    <span>This is a test slide</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="slide">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1670087670280-7a3e71a7efa6?ixid=Mnw5MTMyMXwwfDF8YWxsfDE1fHx8fHx8Mnx8MTY3MTAxNTg5Ng&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="about-image5"
+                  />
+                  <span class="about-text28">
+                    <span>This one also!</span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+              <div class="about-buttons-container">
+                <div class="about-buttons2">
+                  <button id="previous-slide" class="about-previous button">
+                    <svg viewBox="0 0 1024 1024" class="about-icon06">
+                      <path d="M32 512l480 480v-288h512v-384h-512v-288z"></path>
+                    </svg>
+                  </button>
+                  <button id="next-slide" class="about-next button">
+                    <svg viewBox="0 0 1024 1024" class="about-icon08">
+                      <path d="M992 512l-480-480v288h-512v384h512v288z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div>
+          <div class="about-container14">
+            <script>
+              const slides = document.querySelectorAll('.slide');
+              let currentSlide = 0;
+
+              function showSlide(n) {
+                slides[currentSlide].classList.remove('slide-active');
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('slide-active');
+              }
+
+              const previousSlideButton = document.querySelector('#previous-slide');
+              previousSlideButton.addEventListener('click', () => {
+                showSlide(currentSlide - 1);
+              });
+
+              const nextSlideButton = document.querySelector('#next-slide');
+              nextSlideButton.addEventListener('click', () => {
+                showSlide(currentSlide + 1);
+              });
+            </script>
+          </div>
+        </div>
+        <footer id="footer" class="about-footer">
+          <div class="about-top1">
+            <div class="branding1-branding">
+              <img
+                alt="image"
+                src="public/external/logo.svg"
+                class="branding1-logo"
+              />
+              <h2 class="branding1-company-name"><span>APC</span></h2>
+            </div>
+            <nav class="about-navigation-links">
+              <span class="about-link06 navLink">Mission</span>
+              <span class="about-link07 navLink">Take Action</span>
+              <span class="about-link08 navLink">News</span>
+              <span class="about-link09 navLink">Contact</span>
+            </nav>
+          </div>
+          <div class="about-middle">
+            <span class="about-text31">
+              <span class="about-text32">Axolotl Preservation Center</span>
+              <br class="about-text33" />
+              <br class="about-text34" />
+              <span class="about-text35">123 Preservation Lane</span>
+              <br class="about-text36" />
+              <span class="about-text37">Habitatville, Axoland</span>
+              <br class="about-text38" />
+              <br class="about-text39" />
+              <span class="about-text40">info@axolotlcenter.org</span>
+              <br class="about-text41" />
+              <span class="about-text42">(123) 456-7890</span>
+            </span>
+          </div>
+          <div class="about-bottom">
+            <span class="about-copyright">
+              Copyright © 2023 Axolotl Species Preservation Center. All rights
+              reserved.
+            </span>
+          </div>
+        </footer>
+        <div>
+          <div class="about-container16">
+            <script>
+              function setCookie(name, value, days) {
+                // Set the cookie with the given name, value, and expiration time (in days)
+                let expires = '';
+                if (days) {
+                  let date = new Date();
+                  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                  expires = '; expires=' + date.toUTCString();
+                }
+                document.cookie = name + '=' + (value || '') + expires + '; path=/';
+              }
+
+              function getCookie(name) {
+                // Get the value of the cookie with the given name
+                let nameEQ = name + '=';
+                let ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                  let c = ca[i];
+                  while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                  if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+              }
+
+              function removeCookie(name) {
+                // Remove the cookie with the given name
+                setCookie(name, '', -1); // Set the cookie with an expiration time of -1 days
+              }
+
+              document.getElementById('close').addEventListener('click', function(){
+                // Get the persistence value
+                let persistence = document.getElementById('banner').getAttribute('data-persistence');
+                if (persistence === 'true') {
+                  // If persistence is enabled, set a cookie to remember that the banner is closed
+                  setCookie('bannerClosed', 'true', 1); // Set the cookie with an expiration time of 1 day
+                } else {
+                  removeCookie('bannerClosed')
+                }
+                document.getElementById('banner').style.display = 'none'; // Hide the banner
+              });
+
+              window.addEventListener('load', function() {
+                // Check if the banner should be displayed or not
+                let bannerClosed = getCookie('bannerClosed');
+                if (bannerClosed === 'true') {
+                  // If the bannerClosed cookie is set, hide the banner
+                  document.getElementById('banner').style.display = 'none';
+                }
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

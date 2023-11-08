@@ -1,0 +1,14 @@
+.highlights-highlights {
+  gap: var(--dl-space-space-twounits);
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: row;
+}
+@media(max-width: 479px) {
+  .highlights-highlights {
+    gap: var(--dl-space-space-unit);
+    flex-direction: column;
+  }
+}
