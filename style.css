@@ -181,6 +181,15 @@
 .slide-active {
   display: flex;
 }
+.form {
+  gap: var(--dl-space-space-fiveunits);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  justify-content: center;
+}
 .Content {
   font-size: 16px;
   font-family: Karla;
@@ -189,6 +198,8 @@
   text-transform: none;
   text-decoration: none;
 }
+
+
 @media(max-width: 991px) {
   .button {
     width: 100%;
@@ -196,6 +207,22 @@
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
   }
+  .form {
+    align-items: flex-start;
+    padding-top: var(--dl-space-space-sixunits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-sixunits);
+  }
 }
-
-
+@media(max-width: 767px) {
+  .form {
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+}
+@media(max-width: 479px) {
+  .form {
+    padding-top: var(--dl-space-space-threeunits);
+    padding-bottom: var(--dl-space-space-threeunits);
+  }
+}

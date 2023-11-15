@@ -1,0 +1,23 @@
+.app-component-container {
+  display: flex;
+  position: relative;
+}
+.app-component-textinput {
+  color: #222223;
+  padding-top: var(--dl-space-space-oneandhalfunits);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 0px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-oneandhalfunits);
+}
+@media(max-width: 991px) {
+  .app-component-textinput {
+    flex: 1;
+  }
+}
+@media(max-width: 479px) {
+  .app-component-textinput {
+    width: 100%;
+    text-align: center;
+  }
+}

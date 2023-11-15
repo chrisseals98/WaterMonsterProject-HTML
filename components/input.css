@@ -1,0 +1,32 @@
+.input-input {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.input-textinput {
+  color: #222223;
+  padding-top: var(--dl-space-space-oneandhalfunits);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 0px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-oneandhalfunits);
+}
+@media(max-width: 991px) {
+  .input-input {
+    width: 100%;
+  }
+  .input-textinput {
+    flex: 1;
+  }
+}
+@media(max-width: 479px) {
+  .input-input {
+    flex-direction: column;
+  }
+  .input-textinput {
+    width: 100%;
+    text-align: center;
+  }
+}
